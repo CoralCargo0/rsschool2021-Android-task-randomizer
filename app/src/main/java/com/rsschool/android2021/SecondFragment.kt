@@ -36,15 +36,15 @@ class SecondFragment : Fragment() {
 
         backButton?.setOnClickListener {
             // TODO: implement back
-            MainActivity().openFirstFragment(generatedResult)
+            mainActivity().openFirstFragment(generatedResult)
 
         }
     }
 
     private fun generate(min: Int, max: Int): Int {
         // TODO: generate random number
-        val random =  Random.nextInt(min..max)          //(min..max).random()
-//        numListener.onGenerateRandom(random)
+        val random =  Random.nextInt(min..max)
+        generateListener().onGenerateButtonClick(random)
         return random
     }
 

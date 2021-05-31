@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">randomizer</string>
+    <string name="app_name">Randomizer</string>
+    <string name="previousResultText" translatable="false">Previous result: %d</string>
+
 </resources>
